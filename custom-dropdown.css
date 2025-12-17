@@ -1,0 +1,90 @@
+.dropdown-menu {
+	--on-surface: #1e1b13;
+	--surface: #fff9ee;
+	--surface-container-lowest: #ffffff;
+	--surface-container-low: #faf3e5;
+	--primary: #6d5e0f;
+	--on-primary: #ffffff;
+	--outline: #7c7767;
+	--outline-variant: #cdc6b4;
+
+	/* ---- Elevation styles ---- */
+	--elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.12),
+		0px 1px 3px rgba(0, 0, 0, 0.08);
+	--elevation-2: 0px 2px 4px rgba(0, 0, 0, 0.12),
+		0px 3px 6px rgba(0, 0, 0, 0.08);
+	--elevation-3: 0px 4px 8px rgba(0, 0, 0, 0.12),
+		0px 6px 12px rgba(0, 0, 0, 0.08);
+	--elevation-4: 0px 6px 12px rgba(0, 0, 0, 0.14),
+		0px 10px 16px rgba(0, 0, 0, 0.1);
+	--elevation-5: 0px 8px 16px rgba(0, 0, 0, 0.16),
+		0px 14px 20px rgba(0, 0, 0, 0.12);
+
+	margin: auto;
+	position: relative;
+	width: 200px;
+}
+
+.dropdown-menu > * {
+	width: 100%;
+}
+
+.dropdown-menu > button,
+.dropdown-menu > ul {
+	background-color: var(--surface-container-lowest);
+	border: 2px solid var(--outline);
+	border-radius: 0.25rem;
+}
+
+.dropdown-menu > button {
+	display: flex;
+	font-size: 1rem;
+}
+
+.dropdown-menu > button > span:first-child {
+	padding: 0.25rem 0.5rem;
+	color: var(--on-surface);
+	width: 100%;
+	text-align: left;
+}
+
+.dropdown-menu > button > span:first-child.placeholder {
+	color: var(--outline);
+}
+
+.dropdown-menu > button > span:last-child {
+	padding: 0.25rem 0.25rem;
+	border-left: 1px solid var(--outline-variant);
+	text-align: left;
+	cursor: pointer;
+}
+
+.dropdown-menu > button > span:last-child:hover {
+	background-color: var(--surface-container-low);
+}
+
+.dropdown-menu > ul {
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+	margin-top: 0.25rem;
+}
+
+.dropdown-menu > ul > li {
+	list-style: none;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.dropdown-menu > ul > li:not(:last-child) {
+	border-bottom: 1px solid var(--outline-variant);
+}
+
+.dropdown-menu > ul > li:hover {
+	cursor: pointer;
+	background-color: var(--surface-container-low);
+}
+
+.dropdown-menu > ul.hide {
+	display: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "custom-dropdown-menu-yvez",
+  "version": "1.0.0",
+  "description": "Custom dropdown menu component made using class",
+  "keywords": [
+    "dropdown-menu"
+  ],
+  "homepage": "https://github.com/yvez-dev/custom-dropdown-menu#readme",
+  "bugs": {
+    "url": "https://github.com/yvez-dev/custom-dropdown-menu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvez-dev/custom-dropdown-menu.git"
+  },
+  "license": "ISC",
+  "author": "Yves Casio",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
